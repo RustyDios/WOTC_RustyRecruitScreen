@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>5556a8c3-22ef-45a6-b74f-a7ea09e9aa7e</Guid>
+    <Name>WOTC_RustyRecruitScreen</Name>
+    <Description>WOTC_RustyRecruitScreen.
+This is a combination of Kdm2k6's LWotC 'stats' display recruit screen, with the config and options of SaintKnaves's Recruits Conserve Character Pool, and the icons of Detailed Soldier Lists.
+
+Made for personal use.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_RustyRecruitScreen</AssemblyName>
+    <RootNamespace>WOTC_RustyRecruitScreen</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTC_RustyRecruitScreen\" />
+    <Folder Include="Src\WOTC_RustyRecruitScreen\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComRustyRecruits.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\UILibrary_RRSImages.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WOTC_RustyRecruitScreen\Classes\UIRecruitmentListItem_Rusty.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_RustyRecruitScreen\Classes\UIRecruitSoldiers_Rusty.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_RustyRecruitScreen\Classes\X2DownloadableContentInfo_WOTC_RustyRecruitScreen.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
